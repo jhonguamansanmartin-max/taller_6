@@ -8,7 +8,11 @@
 		<version>4.0.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+<<<<<<< HEAD
 	<groupId>com.krakedev</groupId>
+=======
+	<groupId>com.example</groupId>
+>>>>>>> 0bd44dfc8eaef8fce816bb133201280d00f64acf
 	<artifactId>asistencias</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
