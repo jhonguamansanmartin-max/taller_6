@@ -4,49 +4,30 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Asistencia {
-	private LocalDate fechasClase;
-	private LocalDateTime fechaHoraRegistro;
-	private String estado;
 
-	public LocalDate getFechasClase() {
-		return fechasClase;
-	}
+    private LocalDate fechaClase;
+    private LocalDateTime fechaHoraRegistro;
+    private String estado;
 
-	public void setFechasClase(LocalDate fechasClase) {
-		this.fechasClase = fechasClase;
-	}
+    public Asistencia() {}
 
-	public LocalDateTime getFechaHoraRegistro() {
-		return fechaHoraRegistro;
-	}
+    public Asistencia(LocalDate fechaClase, LocalDateTime fechaHoraRegistro, String estado) {
+        this.fechaClase = fechaClase;
+        this.fechaHoraRegistro = fechaHoraRegistro;
+        this.estado = estado;
+    }
 
-	public void setFechaHoraRegistro(LocalDateTime fechaHoraRegistro) {
-		this.fechaHoraRegistro = fechaHoraRegistro;
-	}
+    public LocalDate getFechaClase() { return fechaClase; }
+    public void setFechaClase(LocalDate fechaClase) { this.fechaClase = fechaClase; }
 
-	public String getEstado() {
-		return estado;
-	}
+    public LocalDateTime getFechaHoraRegistro() { return fechaHoraRegistro; }
+    public void setFechaHoraRegistro(LocalDateTime fechaHoraRegistro) { this.fechaHoraRegistro = fechaHoraRegistro; }
 
-	public void setEstado(String estado) {
-		this.estado = estado;
-	}
+    public String getEstado() { return estado; }
+    public void setEstado(String estado) { this.estado = estado; }
 
-	public Asistencia() {
-	}
-
-	public Asistencia(LocalDate fechasClase, LocalDateTime fechaHoraRegistro, String estado) {
-		super();
-		this.fechasClase = fechasClase;
-		this.fechaHoraRegistro = fechaHoraRegistro;
-		this.estado = estado;
-	}
-
-	@Override
-	public String toString() {
-		return "Asistencia [fechasClase=" + fechasClase + ", fechaHoraRegistro=" + fechaHoraRegistro + ", estado="
-				+ estado + "]";
-	}
-	
-	
+    @Override
+    public String toString() {
+        return "Asistencia [fechaClase=" + fechaClase + ", estado=" + estado + "]";
+    }
 }

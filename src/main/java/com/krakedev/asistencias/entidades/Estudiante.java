@@ -1,47 +1,30 @@
 package com.krakedev.asistencias.entidades;
 
 public class Estudiante {
-	private String cedula;
-	private String nombre;
-	private String apellido;
 
-	public String getCedula() {
-		return cedula;
-	}
+    private String cedula;
+    private String nombre;
+    private String apellido;
 
-	public void setCedula(String cedula) {
-		this.cedula = cedula;
-	}
+    public Estudiante() {}
 
-	public String getNombre() {
-		return nombre;
-	}
+    public Estudiante(String cedula, String nombre, String apellido) {
+        this.cedula = cedula;
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
+    public String getCedula() { return cedula; }
+    public void setCedula(String cedula) { this.cedula = cedula; }
 
-	public String getApellido() {
-		return apellido;
-	}
+    public String getNombre() { return nombre; }
+    public void setNombre(String nombre) { this.nombre = nombre; }
 
-	public void setApellido(String apellido) {
-		this.apellido = apellido;
-	}
+    public String getApellido() { return apellido; }
+    public void setApellido(String apellido) { this.apellido = apellido; }
 
-	public Estudiante() {
-	}
-
-	public Estudiante(String cedula, String nombre, String apellido) {
-		super();
-		this.cedula = cedula;
-		this.nombre = nombre;
-		this.apellido = apellido;
-	}
-
-	@Override
-	public String toString() {
-		return "Estudiante [cedula=" + cedula + ", nombre=" + nombre + ", apellido=" + apellido + "]";
-	}
-
+    @Override
+    public String toString() {
+        return "Estudiante [cedula=" + cedula + ", nombre=" + nombre + ", apellido=" + apellido + "]";
+    }
 }
